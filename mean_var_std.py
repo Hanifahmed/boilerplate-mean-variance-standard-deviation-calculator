@@ -7,7 +7,7 @@ def calculate(list):
     # Convert list to 3x3 numpy array
     matrix = np.array(list).reshape(3, 3)
 
-    # Prepare dictionary with required statistics
+    # Prepare dictionary with
     calculations = {
         'mean': [matrix.mean(axis=0).tolist(), matrix.mean(axis=1).tolist(), matrix.mean().item()],
         'variance': [matrix.var(axis=0).tolist(), matrix.var(axis=1).tolist(), matrix.var().item()],
